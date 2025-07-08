@@ -15,21 +15,18 @@ public class CurrentAccount implements ICurrentAccount {
         this.balance = balance;
     }
 
-    @Override
     public void withdraw(double amount) {
         if (amount > 0 && amount <= this.balance) {
             this.balance -= amount;
         }
     }
 
-    @Override
     public void deposit(double amount) {
         if (amount > 0) {
             this.balance += amount;
         }
     }
 
-    @Override
     public void getBalance() {
         System.out.println(this.balance);
     }
