@@ -1,15 +1,7 @@
-import current_account.CurrentAccount;
-import person.Gender;
-import person.Person;
+package person;
 
 public class Main {
     public static void main(String[] args) {
-        CurrentAccount augustoAccount = new CurrentAccount(1234, 1, "Augusto", "04/07/2005", 100.00);
-        augustoAccount.withdraw(90.00);
-        augustoAccount.getBalance();
-        augustoAccount.deposit(200.00);
-        augustoAccount.getBalance();
-
         System.out.println("AUGUSTO PERSON");
         Person augusto = new Person("Augusto", "Borges", 18, Gender.MALE);
         System.out.println(augusto.getAge());
